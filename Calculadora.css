@@ -1,0 +1,98 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    background-image: url(OIPPPPPPPP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;   
+}
+.Calculadora{
+    margin: 0 auto;
+    flex-direction: column;
+    width: 440px;
+    background-color: chartreuse;
+    font-size: 35px;
+    border-radius: 40px;
+    box-shadow: .3rem .3rem;
+    padding: 20px;
+    
+}
+.Calculadora:hover {
+    border: 2px solid chartreuse;
+    box-shadow: 0 0 200px chartreuse, inset 0 0 30px chartreuse;
+    transition: .9s;
+    text-shadow: 2px 1px #4299e1;
+    background-image: linear-gradient( to right, #4caf50, #4299e1) ; 
+}
+#tigual,#tponto,#tmais,#tmenos,#tvezes,#tdividir,#On,#tc,#op{
+    background-image: linear-gradient( to right, red, #4299e1) ;
+}
+.botao{
+   
+    border: 1px solid black;
+    padding: 1rem 1.2rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    box-shadow: .3rem .3rem;
+
+}
+.botao:hover{
+    border: 2px solid black;
+    box-shadow: 0 0 10px black, inset 0 0 30px black;
+    transition: .9s;
+    font-size: 28px;
+}
+
+.display{
+    font-size: 50px;
+    text-align: end;
+    font-family: monospace;
+    margin-right: 8px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 2px 4px;
+    border: 2px solid black;
+    
+    
+}
+
+.titulo{
+    margin: 5px;
+    font-size: 45px;
+    font-family: 'Roboto';
+}
+
+#tigual{
+    grid-row: span 2;
+       
+}
+  
+.teclas{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: .8rem;
+     
+}
+#tzero{
+  text-align: center;
+  border-color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;    
+}
+#On {
+    max-width: 82px;
+}
